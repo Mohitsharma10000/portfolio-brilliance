@@ -70,7 +70,7 @@ const HeroSection = () => {
           duration: 0.8
         }} className="text-5xl md:text-7xl lg:text-8xl font-bold tracking-tight mb-6">
             Hi, I'm{" "}
-            <span className="text-gradient">Mohit Sharma</span>
+            <span className="text-gradient">Software Engineer · CS Student · Problem Solver </span>
           </motion.h1>
 
           {/* Tagline */}
@@ -83,7 +83,7 @@ const HeroSection = () => {
         }} transition={{
           delay: 0.5,
           duration: 0.8
-        }} className="text-xl md:text-2xl text-muted-foreground mb-8 max-w-2xl mx-auto">Software Engineer · CS Student · Problem Solver<span className="text-foreground font-medium">Software Engineer</span> · CSE Student · Problem Solver
+        }} className="text-xl md:text-2xl text-muted-foreground mb-8 max-w-2xl mx-auto">Software Engineer · CS Student · Problem Solver · CSE Student · Problem Solver
           </motion.p>
 
           {/* Description */}
