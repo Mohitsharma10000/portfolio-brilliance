@@ -83,8 +83,7 @@ const HeroSection = () => {
         }} transition={{
           delay: 0.5,
           duration: 0.8
-        }} className="text-xl md:text-2xl text-muted-foreground mb-8 max-w-2xl mx-auto">Software Engineer · CS Student · Problem Solver · CSE Student · Problem Solver
-          </motion.p>
+        }} className="text-xl md:text-2xl text-muted-foreground mb-8 max-w-2xl mx-auto">Software Engineer · CS Student · Problem Solver </motion.p>
 
           {/* Description */}
           <motion.p initial={{
