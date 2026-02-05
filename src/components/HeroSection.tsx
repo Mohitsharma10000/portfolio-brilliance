@@ -70,7 +70,7 @@ const HeroSection = () => {
           duration: 0.8
         }} className="text-5xl md:text-7xl lg:text-8xl font-bold tracking-tight mb-6">
             Hi, I'm{" "}
-            <span className="text-gradient">Software Engineer · CS Student · Problem Solver </span>
+            <span className="text-gradient">Mohit Sharma </span>
           </motion.h1>
 
           {/* Tagline */}
