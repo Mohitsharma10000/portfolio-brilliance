@@ -9,7 +9,7 @@ const highlights = [{
 }, {
   icon: Target,
   title: "Problem Solver",
-  description: "300+ DSA challenges conquered"
+  description: "500+ DSA challenges conquered"
 }, {
   icon: Lightbulb,
   title: "Quick Learner",

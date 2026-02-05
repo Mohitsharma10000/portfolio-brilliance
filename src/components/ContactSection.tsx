@@ -18,14 +18,14 @@ const contactInfo = [
   {
     icon: Github,
     label: "GitHub",
-    value: "github.com/Mohitsharma",
-    href: "https://github.com/Mohitsharma",
+    value: "github.com/Mohitsharma10000",
+    href: "https://github.com/Mohitsharma10000",
   },
   {
     icon: Linkedin,
     label: "LinkedIn",
-    value: "linkedin.com/in/mohit-sharma",
-    href: "https://www.linkedin.com/in/mohit-sharma",
+    value: "linkedin.com/in/mohit-sharma-b8a60a257",
+    href: "https://www.linkedin.com/in/mohit-sharma-b8a60a257",
   },
   {
     icon: MapPin,
