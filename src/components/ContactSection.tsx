@@ -71,7 +71,6 @@ const ContactSection = () => {
               transition={{ delay: 0.3, duration: 0.6 }}
               className="text-muted-foreground mt-4 max-w-2xl mx-auto text-lg"
             >
-              I'm currently looking for Summer 2026 internship opportunities. 
               Feel free to reach out if you'd like to discuss potential collaborations or just want to say hi!
             </motion.p>
           </div>
@@ -126,18 +125,6 @@ const ContactSection = () => {
             </motion.div>
           </motion.div>
 
-          {/* Availability note */}
-          <motion.div
-            initial={{ opacity: 0 }}
-            animate={isInView ? { opacity: 1 } : {}}
-            transition={{ delay: 1, duration: 0.6 }}
-            className="text-center mt-10"
-          >
-            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 border border-primary/20">
-              <span className="w-2 h-2 rounded-full bg-primary animate-pulse" />
-              <span className="text-sm text-primary">Available for Summer 2026 Internships (May–August)</span>
-            </div>
-          </motion.div>
         </motion.div>
       </div>
     </section>
