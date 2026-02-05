@@ -34,27 +34,128 @@ const HeroSection = () => {
     }} />
 
       <div className="container relative z-10 px-4 md:px-6">
-        <motion.div initial={{
-        opacity: 0,
-        y: 30
-      }} animate={{
-        opacity: 1,
-        y: 0
-      }} transition={{
-        duration: 0.8,
-        ease: "easeOut"
-      }} className="text-center max-w-4xl mx-auto">
-          {/* Profile Image with 3D effect */}
+        <div className="flex flex-col-reverse md:flex-row items-center justify-between gap-8 md:gap-12 max-w-6xl mx-auto">
+          {/* Left side - Text content */}
+          <motion.div initial={{
+            opacity: 0,
+            x: -30
+          }} animate={{
+            opacity: 1,
+            x: 0
+          }} transition={{
+            duration: 0.8,
+            ease: "easeOut"
+          }} className="text-center md:text-left flex-1">
+            {/* Status badge */}
+            <motion.div initial={{
+              opacity: 0,
+              scale: 0.8
+            }} animate={{
+              opacity: 1,
+              scale: 1
+            }} transition={{
+              delay: 0.2,
+              duration: 0.5
+            }} className="inline-flex items-center gap-2 px-4 py-2 mb-8 rounded-full glass-card">
+              <span className="w-2 h-2 rounded-full bg-green-400 animate-pulse" />
+              <span className="text-sm text-muted-foreground">Open to Summer 2026 Internships</span>
+            </motion.div>
+
+            {/* Name */}
+            <motion.h1 initial={{
+              opacity: 0,
+              y: 20
+            }} animate={{
+              opacity: 1,
+              y: 0
+            }} transition={{
+              delay: 0.3,
+              duration: 0.8
+            }} className="text-5xl md:text-6xl lg:text-7xl font-bold tracking-tight mb-6">
+              Hi, I'm{" "}
+              <span className="text-gradient">Mohit Sharma</span>
+            </motion.h1>
+
+            {/* Tagline */}
+            <motion.p initial={{
+              opacity: 0,
+              y: 20
+            }} animate={{
+              opacity: 1,
+              y: 0
+            }} transition={{
+              delay: 0.5,
+              duration: 0.8
+            }} className="text-xl md:text-2xl text-muted-foreground mb-8">
+              Software Engineer · CS Student · Problem Solver
+            </motion.p>
+
+            {/* Description */}
+            <motion.p initial={{
+              opacity: 0,
+              y: 20
+            }} animate={{
+              opacity: 1,
+              y: 0
+            }} transition={{
+              delay: 0.6,
+              duration: 0.8
+            }} className="text-muted-foreground mb-10 max-w-xl leading-relaxed">
+              Passionate about building scalable applications and solving complex problems 
+              with clean, efficient code. 500+ DSA problems solved.
+            </motion.p>
+
+            {/* CTA Buttons */}
+            <motion.div initial={{
+              opacity: 0,
+              y: 20
+            }} animate={{
+              opacity: 1,
+              y: 0
+            }} transition={{
+              delay: 0.7,
+              duration: 0.8
+            }} className="flex flex-col sm:flex-row items-center md:items-start justify-center md:justify-start gap-4 mb-8">
+              <a href="#projects" className="btn-glow px-8 py-4 rounded-xl font-semibold text-primary-foreground transition-all">
+                View Projects
+              </a>
+              <a href="#contact" className="px-8 py-4 rounded-xl font-semibold glass-card hover:bg-secondary/50 transition-all">
+                Get in Touch
+              </a>
+            </motion.div>
+
+            {/* Social Links */}
+            <motion.div initial={{
+              opacity: 0
+            }} animate={{
+              opacity: 1
+            }} transition={{
+              delay: 0.9,
+              duration: 0.8
+            }} className="flex items-center justify-center md:justify-start gap-6">
+              <a href="https://github.com/Mohitsharma10000" target="_blank" rel="noopener noreferrer" className="p-3 rounded-xl glass-card hover:bg-secondary/50 transition-all group" aria-label="GitHub">
+                <Github className="w-5 h-5 text-muted-foreground group-hover:text-primary transition-colors" />
+              </a>
+              <a href="https://www.linkedin.com/in/mohit-sharma-b8a60a257" target="_blank" rel="noopener noreferrer" className="p-3 rounded-xl glass-card hover:bg-secondary/50 transition-all group" aria-label="LinkedIn">
+                <Linkedin className="w-5 h-5 text-muted-foreground group-hover:text-primary transition-colors" />
+              </a>
+              <a href="mailto:mohitsharma14651@gmail.com" className="p-3 rounded-xl glass-card hover:bg-secondary/50 transition-all group" aria-label="Email">
+                <Mail className="w-5 h-5 text-muted-foreground group-hover:text-primary transition-colors" />
+              </a>
+            </motion.div>
+          </motion.div>
+
+          {/* Right side - Profile Image with 3D effect */}
           <motion.div
-            initial={{ opacity: 0, scale: 0.8 }}
-            animate={{ opacity: 1, scale: 1 }}
-            transition={{ delay: 0.1, duration: 0.6 }}
-            className="mb-8 flex justify-center"
+            initial={{ opacity: 0, x: 30 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ delay: 0.3, duration: 0.8 }}
+            className="flex-shrink-0"
           >
             <motion.div
               className="relative"
               animate={{
-                y: [0, -10, 0],
+                y: [0, -15, 0],
               }}
               transition={{
                 duration: 4,
@@ -68,7 +169,7 @@ const HeroSection = () => {
               }}
               style={{ perspective: 1000 }}
             >
-              <div className="relative w-40 h-40 md:w-48 md:h-48 rounded-full overflow-hidden glass-card p-1" style={{ boxShadow: "var(--glow-primary)" }}>
+              <div className="relative w-64 h-64 md:w-80 md:h-80 lg:w-96 lg:h-96 rounded-full overflow-hidden glass-card p-1" style={{ boxShadow: "var(--glow-primary)" }}>
                 <img
                   src={profileImage}
                   alt="Mohit Sharma"
@@ -78,124 +179,29 @@ const HeroSection = () => {
               {/* Glowing ring effect */}
               <div className="absolute inset-0 rounded-full opacity-50" style={{ 
                 background: "var(--gradient-primary)", 
-                filter: "blur(20px)",
+                filter: "blur(25px)",
                 zIndex: -1 
               }} />
             </motion.div>
           </motion.div>
-          {/* Status badge */}
-          <motion.div initial={{
-          opacity: 0,
-          scale: 0.8
-        }} animate={{
-          opacity: 1,
-          scale: 1
-        }} transition={{
-          delay: 0.2,
-          duration: 0.5
-        }} className="inline-flex items-center gap-2 px-4 py-2 mb-8 rounded-full glass-card">
-            <span className="w-2 h-2 rounded-full bg-green-400 animate-pulse" />
-            <span className="text-sm text-muted-foreground">Open to Summer 2026 Internships</span>
-          </motion.div>
+        </div>
 
-          {/* Name */}
-          <motion.h1 initial={{
-          opacity: 0,
-          y: 20
-        }} animate={{
-          opacity: 1,
-          y: 0
-        }} transition={{
-          delay: 0.3,
-          duration: 0.8
-        }} className="text-5xl md:text-7xl lg:text-8xl font-bold tracking-tight mb-6">
-            Hi, I'm{" "}
-            <span className="text-gradient">Mohit Sharma </span>
-          </motion.h1>
-
-          {/* Tagline */}
-          <motion.p initial={{
-          opacity: 0,
-          y: 20
-        }} animate={{
-          opacity: 1,
-          y: 0
-        }} transition={{
-          delay: 0.5,
-          duration: 0.8
-        }} className="text-xl md:text-2xl text-muted-foreground mb-8 max-w-2xl mx-auto">Software Engineer · CS Student · Problem Solver </motion.p>
-
-          {/* Description */}
-          <motion.p initial={{
-          opacity: 0,
-          y: 20
-        }} animate={{
-          opacity: 1,
-          y: 0
-        }} transition={{
-          delay: 0.6,
-          duration: 0.8
-        }} className="text-muted-foreground mb-10 max-w-xl mx-auto leading-relaxed">
-            Passionate about building scalable applications and solving complex problems 
-            with clean, efficient code. 500+ DSA problems solved.
-          </motion.p>
-
-          {/* CTA Buttons */}
-          <motion.div initial={{
-          opacity: 0,
-          y: 20
-        }} animate={{
-          opacity: 1,
-          y: 0
-        }} transition={{
-          delay: 0.7,
-          duration: 0.8
-        }} className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-12">
-            <a href="#projects" className="btn-glow px-8 py-4 rounded-xl font-semibold text-primary-foreground transition-all">
-              View Projects
-            </a>
-            <a href="#contact" className="px-8 py-4 rounded-xl font-semibold glass-card hover:bg-secondary/50 transition-all">
-              Get in Touch
-            </a>
-          </motion.div>
-
-          {/* Social Links */}
-          <motion.div initial={{
+        {/* Scroll indicator */}
+        <motion.div initial={{
           opacity: 0
         }} animate={{
           opacity: 1
         }} transition={{
-          delay: 0.9,
+          delay: 1.2,
           duration: 0.8
-        }} className="flex items-center justify-center gap-6">
-            <a href="https://github.com/Mohitsharma10000" target="_blank" rel="noopener noreferrer" className="p-3 rounded-xl glass-card hover:bg-secondary/50 transition-all group" aria-label="GitHub">
-              <Github className="w-5 h-5 text-muted-foreground group-hover:text-primary transition-colors" />
-            </a>
-            <a href="https://www.linkedin.com/in/mohit-sharma-b8a60a257" target="_blank" rel="noopener noreferrer" className="p-3 rounded-xl glass-card hover:bg-secondary/50 transition-all group" aria-label="LinkedIn">
-              <Linkedin className="w-5 h-5 text-muted-foreground group-hover:text-primary transition-colors" />
-            </a>
-            <a href="mailto:mohitsharma14651@gmail.com" className="p-3 rounded-xl glass-card hover:bg-secondary/50 transition-all group" aria-label="Email">
-              <Mail className="w-5 h-5 text-muted-foreground group-hover:text-primary transition-colors" />
-            </a>
-          </motion.div>
-        </motion.div>
-
-        {/* Scroll indicator */}
-        <motion.div initial={{
-        opacity: 0
-      }} animate={{
-        opacity: 1
-      }} transition={{
-        delay: 1.2,
-        duration: 0.8
-      }} className="absolute bottom-8 left-1/2 -translate-x-1/2">
+        }} className="absolute bottom-8 left-1/2 -translate-x-1/2">
           <motion.a href="#about" animate={{
-          y: [0, 8, 0]
-        }} transition={{
-          duration: 2,
-          repeat: Infinity,
-          ease: "easeInOut"
-        }} className="flex flex-col items-center gap-2 text-muted-foreground hover:text-primary transition-colors">
+            y: [0, 8, 0]
+          }} transition={{
+            duration: 2,
+            repeat: Infinity,
+            ease: "easeInOut"
+          }} className="flex flex-col items-center gap-2 text-muted-foreground hover:text-primary transition-colors">
             <span className="text-xs uppercase tracking-widest">Scroll</span>
             <ArrowDown className="w-4 h-4" />
           </motion.a>
