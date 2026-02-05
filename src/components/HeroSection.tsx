@@ -97,7 +97,7 @@ const HeroSection = () => {
           duration: 0.8
         }} className="text-muted-foreground mb-10 max-w-xl mx-auto leading-relaxed">
             Passionate about building scalable applications and solving complex problems 
-            with clean, efficient code. 300+ DSA problems solved.
+            with clean, efficient code. 500+ DSA problems solved.
           </motion.p>
 
           {/* CTA Buttons */}
@@ -128,10 +128,10 @@ const HeroSection = () => {
           delay: 0.9,
           duration: 0.8
         }} className="flex items-center justify-center gap-6">
-            <a href="https://github.com/Mohitsharma" target="_blank" rel="noopener noreferrer" className="p-3 rounded-xl glass-card hover:bg-secondary/50 transition-all group" aria-label="GitHub">
+            <a href="https://github.com/Mohitsharma10000" target="_blank" rel="noopener noreferrer" className="p-3 rounded-xl glass-card hover:bg-secondary/50 transition-all group" aria-label="GitHub">
               <Github className="w-5 h-5 text-muted-foreground group-hover:text-primary transition-colors" />
             </a>
-            <a href="https://www.linkedin.com/in/mohit-sharma" target="_blank" rel="noopener noreferrer" className="p-3 rounded-xl glass-card hover:bg-secondary/50 transition-all group" aria-label="LinkedIn">
+            <a href="https://www.linkedin.com/in/mohit-sharma-b8a60a257" target="_blank" rel="noopener noreferrer" className="p-3 rounded-xl glass-card hover:bg-secondary/50 transition-all group" aria-label="LinkedIn">
               <Linkedin className="w-5 h-5 text-muted-foreground group-hover:text-primary transition-colors" />
             </a>
             <a href="mailto:mohitsharma14651@gmail.com" className="p-3 rounded-xl glass-card hover:bg-secondary/50 transition-all group" aria-label="Email">
