@@ -5,8 +5,8 @@ import { Trophy, Code2, Award, Users } from "lucide-react";
 const achievements = [
   {
     icon: Code2,
-    title: "300+ DSA Problems",
-    description: "Solved over 300 Data Structures and Algorithms problems on LeetCode and HackerRank, demonstrating strong problem-solving abilities.",
+    title: "500+ DSA Problems",
+    description: "Solved over 500 Data Structures and Algorithms problems on LeetCode and HackerRank, demonstrating strong problem-solving abilities.",
     gradient: "from-cyan-500 to-blue-500",
   },
   {
