@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import { ArrowDown, Github, Linkedin, Mail } from "lucide-react";
+import profileImage from "@/assets/mohit-profile.png";
 const FloatingShape = ({
   className,
   delay = 0
@@ -43,6 +44,45 @@ const HeroSection = () => {
         duration: 0.8,
         ease: "easeOut"
       }} className="text-center max-w-4xl mx-auto">
+          {/* Profile Image with 3D effect */}
+          <motion.div
+            initial={{ opacity: 0, scale: 0.8 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{ delay: 0.1, duration: 0.6 }}
+            className="mb-8 flex justify-center"
+          >
+            <motion.div
+              className="relative"
+              animate={{
+                y: [0, -10, 0],
+              }}
+              transition={{
+                duration: 4,
+                repeat: Infinity,
+                ease: "easeInOut"
+              }}
+              whileHover={{
+                scale: 1.05,
+                rotateY: 10,
+                rotateX: -5,
+              }}
+              style={{ perspective: 1000 }}
+            >
+              <div className="relative w-40 h-40 md:w-48 md:h-48 rounded-full overflow-hidden glass-card p-1" style={{ boxShadow: "var(--glow-primary)" }}>
+                <img
+                  src={profileImage}
+                  alt="Mohit Sharma"
+                  className="w-full h-full object-cover object-top rounded-full"
+                />
+              </div>
+              {/* Glowing ring effect */}
+              <div className="absolute inset-0 rounded-full opacity-50" style={{ 
+                background: "var(--gradient-primary)", 
+                filter: "blur(20px)",
+                zIndex: -1 
+              }} />
+            </motion.div>
+          </motion.div>
           {/* Status badge */}
           <motion.div initial={{
           opacity: 0,
