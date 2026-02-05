@@ -46,20 +46,6 @@ const HeroSection = () => {
             duration: 0.8,
             ease: "easeOut"
           }} className="text-center md:text-left flex-1">
-            {/* Status badge */}
-            <motion.div initial={{
-              opacity: 0,
-              scale: 0.8
-            }} animate={{
-              opacity: 1,
-              scale: 1
-            }} transition={{
-              delay: 0.2,
-              duration: 0.5
-            }} className="inline-flex items-center gap-2 px-4 py-2 mb-8 rounded-full glass-card">
-              <span className="w-2 h-2 rounded-full bg-green-400 animate-pulse" />
-              <span className="text-sm text-muted-foreground">Open to Summer 2026 Internships</span>
-            </motion.div>
 
             {/* Name */}
             <motion.h1 initial={{
