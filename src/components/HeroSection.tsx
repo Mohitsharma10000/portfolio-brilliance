@@ -122,7 +122,7 @@ const HeroSection = () => {
               <a href="https://github.com/Mohitsharma10000" target="_blank" rel="noopener noreferrer" className="p-3 rounded-xl glass-card hover:bg-secondary/50 transition-all group" aria-label="GitHub">
                 <Github className="w-5 h-5 text-muted-foreground group-hover:text-primary transition-colors" />
               </a>
-              <a href="https://www.linkedin.com/in/mohit-sharma-b8a60a257" target="_blank" rel="noopener noreferrer" className="p-3 rounded-xl glass-card hover:bg-secondary/50 transition-all group" aria-label="LinkedIn">
+              <a href="https://www.linkedin.com/in/mohit-sharma-156073329" target="_blank" rel="noopener noreferrer" className="p-3 rounded-xl glass-card hover:bg-secondary/50 transition-all group" aria-label="LinkedIn">
                 <Linkedin className="w-5 h-5 text-muted-foreground group-hover:text-primary transition-colors" />
               </a>
               <a href="mailto:mohitsharma14651@gmail.com" className="p-3 rounded-xl glass-card hover:bg-secondary/50 transition-all group" aria-label="Email">
