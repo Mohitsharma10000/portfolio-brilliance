@@ -138,23 +138,7 @@ const HeroSection = () => {
             transition={{ delay: 0.3, duration: 0.8 }}
             className="flex-shrink-0"
           >
-            <motion.div
-              className="relative"
-              animate={{
-                y: [0, -15, 0],
-              }}
-              transition={{
-                duration: 4,
-                repeat: Infinity,
-                ease: "easeInOut"
-              }}
-              whileHover={{
-                scale: 1.05,
-                rotateY: 10,
-                rotateX: -5,
-              }}
-              style={{ perspective: 1000 }}
-            >
+            <div className="relative">
               <div className="relative w-64 h-64 md:w-80 md:h-80 lg:w-96 lg:h-96 rounded-full overflow-hidden glass-card p-1" style={{ boxShadow: "var(--glow-primary)" }}>
                 <img
                   src={profileImage}
@@ -168,7 +152,7 @@ const HeroSection = () => {
                 filter: "blur(25px)",
                 zIndex: -1 
               }} />
-            </motion.div>
+            </div>
           </motion.div>
         </div>
 
