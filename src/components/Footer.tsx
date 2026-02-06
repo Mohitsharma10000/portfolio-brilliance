@@ -33,7 +33,7 @@ const Footer = () => {
               <Github className="w-4 h-4" />
             </a>
             <a
-              href="https://www.linkedin.com/in/mohit-sharma-b8a60a257"
+              href="https://www.linkedin.com/in/mohit-sharma-156073329"
               target="_blank"
               rel="noopener noreferrer"
               className="p-2.5 rounded-lg bg-secondary/50 hover:bg-secondary transition-colors text-muted-foreground hover:text-foreground"

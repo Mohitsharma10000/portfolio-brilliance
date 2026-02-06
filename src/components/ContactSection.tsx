@@ -24,8 +24,8 @@ const contactInfo = [
   {
     icon: Linkedin,
     label: "LinkedIn",
-    value: "linkedin.com/in/mohit-sharma-b8a60a257",
-    href: "https://www.linkedin.com/in/mohit-sharma-b8a60a257",
+    value: "linkedin.com/in/mohit-sharma-156073329",
+    href: "https://www.linkedin.com/in/mohit-sharma-156073329",
   },
   {
     icon: MapPin,
